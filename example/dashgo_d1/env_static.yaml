@@ -1,0 +1,44 @@
+world:
+  height: 5
+  width: 5
+  step_time: 0.1
+  sample_time: 0.1
+  offset: [-1, -2]
+  collision_mode: stop
+  control_mode: auto
+
+robot:
+  - kinematics:
+      name: diff
+    shape:
+      name: circle
+      radius: 0.203
+    state: [0, 0, 0]
+    goal: [2.0, 0, 0]
+    vel_min: [-0.3, -1.0]
+    vel_max: [0.3, 1.0]
+    goal_threshold: 0.15
+    plot:
+      show_trail: true
+      show_goal: true
+    sensors:
+      - type: lidar2d
+        range_min: 0
+        range_max: 4
+        angle_range: 3.1415926
+        number: 100
+        noise: false
+        std: 0.01
+
+obstacle:
+  - number: 2
+    distribution:
+      name: manual
+    shape:
+      - name: circle
+        radius: 0.18
+      - name: circle
+        radius: 0.18
+    state:
+      - [0.9, 0.45, 0]
+      - [1.45, -0.35, 0]
