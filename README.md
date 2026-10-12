@@ -1,3 +1,13 @@
+# TNHTH DashGo adaptation
+
+- Repository: `TNHTH/dashgo-neupan`
+- Upstream: https://github.com/hanruihua/NeuPAN @ `579e7afa239cd7ff61f7f63fbd4aaaecbb136d3b`
+- Fidelity: F1
+- Verification: V0
+- Canonical branch: `main`
+
+`test`（`11842f9ac1435a33e45762ce1d4040f2cae16e50`）相对 `main` 没有新增文件，只会删掉 `main` 上仍在的文件，因此拒绝作为 canonical。该 tip 记为 tag `archive-neupan-test-rejected-2026-10-12`。下文是上游 README。
+
 <div align="center">
 
 # NeuPAN: Direct Point Robot Navigation with End-to-End Model-based Learning
